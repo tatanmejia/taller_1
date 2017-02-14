@@ -1,10 +1,10 @@
 #include <iostream>
-#include <windows.h>
 #include <conio.h>
-#include <cmath>
+#include <windows.h>
 #include <stdlib.h>
-using namespace std;
+#include <cmath>
 
+using namespace std;
 void gotoxy(int x,int y)
  {
     HANDLE hcon;
@@ -16,12 +16,9 @@ void gotoxy(int x,int y)
  }
 
 
+main(){
 
-using namespace std;
-
-
-int main(int argc, char** argv)
-{	int dato;
+int dato;
 
 
 
@@ -29,12 +26,12 @@ int main(int argc, char** argv)
   				system ("cls");
 
 			    gotoxy(37,4); cout<<"MENU";
-  				gotoxy(20,8); cout<<"1. Imprimir en pantalla numeros del 1 al 10:  ";
-  				gotoxy(20,10); cout<<"2. Sumar los numeros del 1 al 100:  ";
-  				gotoxy(20,12); cout<<"3. Sumar numeros pares del 1 al 50: ";
- 			    gotoxy(20,14); cout<<"4. Sumar numeros impares del 1 al 50: ";
-                gotoxy(20,16); cout<<"0. SALIR ";
-                gotoxy(20,20); cout<<"Elija una opcion ";cin>>dato;
+  				gotoxy(18,8); cout<<"1. Imprimir en pantalla numeros del 1 al 10:  ";
+  				gotoxy(18,10); cout<<"2.Imprimir las tablas de multiplicar de un numero del 1 al 20: ";
+  				gotoxy(18,12); cout<<"3. Sumar numeros pares del 1 al 50: ";
+ 			    gotoxy(18,14); cout<<"4. Sumar numeros impares del 1 al 50: ";
+                gotoxy(18,16); cout<<"0. SALIR ";
+                gotoxy(18,20); cout<<"Elija una opcion ";cin>>dato;
 
 
 
@@ -47,29 +44,27 @@ int main(int argc, char** argv)
 							system("cls");
                             cout<<"1. Imprimir en pantalla numeros del 1 al 10: "<<endl<<endl;
                         {
-                            int num=0;
-                            cout<<"Los numeros del 1 al 10 "<<endl;
-                            while(num<10)
-                            {
-                            num++;
-                            cout<<num<<endl;
-                            }
 
+                            cout<<"Los numeros del 1 al 10 "<<endl;
+                            for (int i=1;i<=10;i++)
+                            cout<<i<<endl;
                         }
 							getch();
 						break;
 					case 2:
 							system("cls");
-                            cout<<"2. Sumar los numeros del 1 al 100."<<endl<<endl;
+                            cout<<"2.Imprimir las tablas de multiplicar de un numero del 1 al 20. "<<endl<<endl;
                             {
-                                int num=1, su=0;
-                            cout<<"Los numeros del 1 al 100 ";
-                            while(num<100)
-                            {
-                            su=num+su;
-                            num=num+1;
-                            cout<<su<<endl;
+                             int n,r;
+                            cout<<"ingrese numero a multiplicar ";
+                            cin>>n;
+                            for (int i=0;i<20;i++){
+                              for(int j=0;j<20;j++)
                             }
+                            n*j=r;
+                                cout<<"el numero elegido es" ,<<n<<"X"<<j<<"="<<r<<endl;
+
+
 
                             }
 
@@ -140,4 +135,5 @@ int main(int argc, char** argv)
 
 
 	return 0;
-}
+
+	}
