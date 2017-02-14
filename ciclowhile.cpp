@@ -45,10 +45,10 @@ int main(int argc, char** argv)
 						break;
 					case 1:
 							system("cls");
-						cout<<"1. Imprimir en pantalla numeros del 1 al 10: "<<endl<<endl;
+                            cout<<"1. Imprimir en pantalla numeros del 1 al 10: "<<endl<<endl;
                         {
-                        int num=0;
-                        cout<<"Los numeros del 1 al 10 ";
+                            int num=0;
+                            cout<<"Los numeros del 1 al 10 ";
                             while(num<10)
                             {
                             num++;
@@ -59,43 +59,73 @@ int main(int argc, char** argv)
 							getch();
 						break;
 					case 2:
-							int valor;
 							system("cls");
-
-							gotoxy(30,2);cout<<"2. Sumar los numeros del 1 al 100.";
-							   {
-                        int num=0;
-                        cout<<"Los numeros del 1 al 10 ";
-                            while(num<10)
+                            cout<<"2. Sumar los numeros del 1 al 100."<<endl<<endl;
                             {
-                            num++;
-                            cout<<num<<endl;
+                                int num=1, su=0;
+                            cout<<"Los numeros del 1 al 100 ";
+                            while(num<100)
+                            {
+                            su=num+su;
+                            num=num+1;
+                            cout<<su<<endl;
                             }
 
-                        }
+                            }
 
 							getch();
 
 						break;
 					case 3:
-							float lad;
 							system("cls");
 
-							gotoxy(30,2);cout<<"3. Sumar numeros pares del 1 al 50: "<<endl;
-							gotoxy(20,6);cout<<"Digite tamano ";cin>>lad;
+							cout<<"3. Sumar numeros pares del 1 al 50: "<<endl;
+                                {
 
-						break;
 
+                                int par=1, sumap=0;
+
+                            while(par<50)
+                                { if(par%2==0)
+                                {
+                                    sumap=sumap+par;
+                                }
+                                par++;
+
+                                }
+                            cout<<"Los suma de los pares del 1 al 50 es :"<<sumap;
+                            }
+
+
+                            getch();
 						break;
 
 					case 4:
-							float r,d;
+
 							system("cls");
 
-							gotoxy(30,2);cout<<"4. Sumar numeros impares del 1 al 50: "<<endl;
-							gotoxy(20,6);cout<<"Digite radio del circulo ";cin>>r;
-							gotoxy(20,8);cout<<"Digite diametro del circulo ";cin>>d;
+							cout<<"4. Sumar numeros impares del 1 al 50: "<<endl;
 
+
+                                int impar=1, suimp=0;
+
+                                while(impar<50)
+                                    { if(impar%2==0){}
+
+                                        else{
+                                            suimp=suimp+impar;
+                                            }
+
+                                          impar++;
+                                    }
+
+
+
+                            cout<<"Los suma de los impares del 1 al 50 es :"<<suimp;
+
+
+
+                            getch();
 
 						break;
 					cout<<endl;
