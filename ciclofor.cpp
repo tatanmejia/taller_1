@@ -1,20 +1,9 @@
 #include <iostream>
 #include <conio.h>
-#include <windows.h>
 #include <stdlib.h>
 #include <cmath>
 
 using namespace std;
-void gotoxy(int x,int y)
- {
-    HANDLE hcon;
-    hcon = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD dwPos;
-    dwPos.X = x;
-    dwPos.Y= y;
-    SetConsoleCursorPosition(hcon,dwPos);
- }
-
 
 main(){
 
@@ -25,13 +14,14 @@ int dato;
 			do {
   				system ("cls");
 
-			    gotoxy(37,4); cout<<"MENU";
-  				gotoxy(18,8); cout<<"1. Imprimir en pantalla numeros del 1 al 10:  ";
-  				gotoxy(18,10); cout<<"2.Imprimir las tablas de multiplicar de un numero del 1 al 20: ";
-  				gotoxy(18,12); cout<<"3. Sumar numeros pares del 1 al 50: ";
- 			    gotoxy(18,14); cout<<"4. Sumar numeros impares del 1 al 50: ";
-                gotoxy(18,16); cout<<"0. SALIR ";
-                gotoxy(18,20); cout<<"Elija una opcion ";cin>>dato;
+                cout<<"MENU"<<endl<<endl;
+  				cout<<"1. Imprimir en pantalla numeros del 1 al 10:  "<<endl;
+                cout<<"2.Imprimir las tablas de multiplicar de un numero del 1 al 20: "<<endl;
+                cout<<"3. Solucionar el factorial de un numero: "<<endl;
+                cout<<"4. Solucionar el numero fibonacci: "<<endl;
+                cout<<"5. Solucionar el numero fibonacci: "<<endl;
+                cout<<"0. SALIR "<<endl;
+                cout<<"Elija una opcion ";cin>>dato;
 
 
 
@@ -54,19 +44,17 @@ int dato;
 					case 2:
 							system("cls");
                             cout<<"2.Imprimir las tablas de multiplicar de un numero del 1 al 20. "<<endl<<endl;
-                            {
-                             int n,r;
+
+                             int n,resul;
                             cout<<"ingrese numero a multiplicar ";
                             cin>>n;
-                            for (int i=0;i<20;i++){
-                              for(int j=0;j<20;j++)
+                            for (int i=1;i<=20;i++)
+                            {
+                            resul=n*i;
+                            cout<<n<<" * "<<i<<"="<<resul<<endl;
                             }
-                            n*j=r;
-                                cout<<"el numero elegido es" ,<<n<<"X"<<j<<"="<<r<<endl;
 
 
-
-                            }
 
 							getch();
 
@@ -74,23 +62,20 @@ int dato;
 					case 3:
 							system("cls");
 
-							cout<<"3. Sumar numeros pares del 1 al 50: "<<endl;
+							cout<<"3. Solucionar factorial de un numero "<<endl;
                                 {
-
-
-                                int par=1, sumap=0;
-
-                            while(par<50)
-                                { if(par%2==0)
+                            int n;
+                            int t=1;
+                            int contad=1;
+                            cout<<"ingrese un numero para calcular factorial"<<endl;
+                            cin>>n;
+                          while(contad<=n)
                                 {
-                                    sumap=sumap+par;
+                                t= t* contad;
+                                contad++;
                                 }
-                                par++;
-
-                                }
-                            cout<<"Los suma de los pares del 1 al 50 es :"<<sumap;
+                            cout<<"El factorial de "<<n<<" es "<<t;
                             }
-
 
                             getch();
 						break;
@@ -99,24 +84,7 @@ int dato;
 
 							system("cls");
 
-							cout<<"4. Sumar numeros impares del 1 al 50: "<<endl;
-
-
-                                int impar=1, suimp=0;
-
-                                while(impar<50)
-                                    { if(impar%2==0){}
-
-                                        else{
-                                            suimp=suimp+impar;
-                                            }
-
-                                          impar++;
-                                    }
-
-
-
-                            cout<<"Los suma de los impares del 1 al 50 es :"<<suimp;
+							cout<<"4. Solucionar el numero fibonacci: "<<endl;
 
 
 
@@ -124,14 +92,14 @@ int dato;
 
 						break;
 					cout<<endl;
-					gotoxy(10,22);cout<<"El valor ingresado no es valido. Debe ser 0 , 1 , 2 , 3 , 4 , 5. "<<endl;
+					cout<<"El valor ingresado no es valido. Debe ser 0 , 1 , 2 , 3 , 4 , 5. "<<endl;
 				}
 				if(dato!=0)
 				{getch();}
 			}
 			while(dato>0);
 
-			gotoxy(20,24);system("pause");
+		system("pause");
 
 
 	return 0;
