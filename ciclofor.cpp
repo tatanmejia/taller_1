@@ -87,7 +87,7 @@ int dato;
 							ant1=1;
 							ant2=1;
 							fib=1;
-							cout<<"Ingrese numero de visualizacion de la  serie Fibonicce"<<endl;
+							cout<<"Ingrese numero de visualizacion de la  serie Fibonacci"<<endl;
 							cin>>numero;
 							cout<<ant1<<endl;
 							for(int i=2;i<=numero;i++){
