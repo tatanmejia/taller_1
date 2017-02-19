@@ -18,7 +18,7 @@ main(){
 
                 cout<<"MENU"<<endl<<endl;
                 cout<<"1. Imprimir matriz:  "<<endl;
-                cout<<"2. Sumar los numeros del 1 al 100:  "<<endl;
+                cout<<"2. Mostrar Matriz automatica por el sistema "<<endl;
                 cout<<"0. SALIR "<<endl;
                 cout<<"Elija una opcion ";cin>>dato;
 
@@ -47,6 +47,24 @@ main(){
                                 }
                         getch();
                         break;
+
+                    case 2:
+                        system("cls");
+
+                        cout<<" 2. Mostrar Matriz automatica por el sistema \n";
+
+                        for(int i=0;i<5;i++)
+                        {
+                            for (int j=0;j<5;j++)
+                            {
+                                cout<<mat[i][j]<<"  ";
+                            }
+                                cout<<endl;
+                        }
+                         getch();
+                        break;
+
+                        default: cout<<"\nEl valor ingresado no es valido. Debe ser 1, 2 o 0"<<endl;
 				if(dato!=0)
 				{getch();}
 			}
