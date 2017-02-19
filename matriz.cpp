@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
@@ -30,46 +31,25 @@ main(){
 						break;
 					case 1:
 							system("cls");
-                            cout<<"1. Imprimir matriz: "<<endl<<endl;
+							int mat[5][5];
+                            cout<<"Ingrese los valores para rellenar  la matriz . "<<endl;
 
-                             int x,y,num=0, numeros[4][3];
-                             for (x=0;x<4;x++)
-
-                            {
-                                for (y=0;y<3;y++)
-                                {
-                                numeros[x][y]=num;
-                                num++;
-                                }
-                            }
-                             cout<<"El array original es: " <<endl;
-
-                            for(x = 0;x < 4;x++)
-                                {
-                                    for(y = 0;y < 3;y++)
-                                    {
-                                    cout<<numeros[x][y];
+                                for (int i=1; i<=5; i++)
+                                    { for (int j=1; j<=5; j++)
+                                    { cout<<"posicion ("<<i<<","<<j<<"): ";
+                                      cin>>mat[i][j]; }
                                     }
+                            cout<<"Los valores ingresados son \n"<<mat[5][5];
 
+                            for (int i=0; i<=5; i++)
+                                { for (int j=0; j<=5; j++)
+                                { cout<<mat[i][j]<<" "; }cout<<endl;
                                 }
-
-							getch();
-						break;
-					/**case 2:
-							system("cls");
-                            cout<<"2. llenar matriz automatica"<<endl<<endl;
-                            {
-
-
-                            }
-
-							getch();
-
-						break;**/
-
-				}
+                        getch();
+                        break;
 				if(dato!=0)
 				{getch();}
+			}
 			}
 			while(dato>0);
 
