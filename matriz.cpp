@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
@@ -64,7 +63,7 @@ main(){
                          getch();
                         break;
 
-                        default: cout<<"\nEl valor ingresado no es valido. Debe ser 1, 2 o 0"<<endl;
+                        default: cout<<"\nEl numero ingresado no es valido. Debe ser 1, 2 o 0"<<endl;
 				if(dato!=0)
 				{getch();}
 			}
