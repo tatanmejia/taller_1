@@ -168,12 +168,87 @@ int dato;
                                                 getch();
 
                                             }
+                        case 3:
+                        system ("cls");
 
+
+                           int nume;
+                         cout<<" Codigo ASCII de numero 0 al 9:  "<<endl;
+                         cin>>nume;
+
+
+                                            switch(nume)
+                                            {
+                                            case 0:
+                                                {
+                                                    cout<<"Ascii 48";
+                                                }
+                                               getch();
+                                                break;
+                                            case 1:
+                                                {
+                                                    cout<<"Ascii 49" ;
+                                                }
+                                                 getch();
+                                                break;
+                                            case 2:
+                                                {
+                                                    cout<<"Ascii 50";
+                                                }
+                                                getch();
+                                                break;
+                                            case 3:
+                                                {
+                                                    cout<<"Ascii 51";
+                                                }
+                                                getch();
+                                                break;
+                                            case 4:
+                                                {
+                                                  cout<<"Ascii 52";
+                                                }
+                                                break;
+                                            case 5:
+                                                {
+                                                    cout<<"Ascii 53" ;
+                                                }
+                                                 getch();
+                                                break;
+                                            case 6:
+                                                {
+                                                    cout<<"Ascii 54";
+                                                }
+                                                getch();
+                                                break;
+                                            case 7:
+                                                {
+                                                    cout<<"Ascii 55";
+                                                }
+                                                getch();
+                                                break;
+                                            case 8:
+                                                {
+                                                  cout<<"Ascii 56";
+                                                }
+                                                break;
+                                            case 9:
+                                                {
+                                                    cout<<"Ascii 57" ;
+                                                }
+                                                 getch();
+                                                break;
+
+                                            default:
+                                                cout<<"El numero ingresado  no correponde a vocal";
+                                                getch();
+
+                                            }
                                 break;
                                 default:
-                                cout<<"El numero ingresado no es valido. Debe ser 1, 2, 3 o 0"<<endl;
+                                cout<<"El numero ingresado no es valido. Debe ser de 0 al 9 "<<endl;
             }
         }
+
 
             	while(dato>0);
 
